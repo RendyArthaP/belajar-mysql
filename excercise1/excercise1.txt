@@ -10,9 +10,18 @@
    AND NOT Country = "USA" 
    AND NOT Country = "Venezuela"
 
-5. 
+5. SELECT CustomerID, CustomerName FROM [Customers] WHERE CustomerID = 65
+   SELECT CustomerID, OrderID FROM [Orders] WHERE CustomerID = 65
+   SELECT * FROM OrderDetails 
+   WHERE OrderID = 10262 
+   OR OrderID = 10272
+   OR OrderID = 10294
+   OR OrderID = 10314
+   OR OrderID = 10316
+   OR OrderID = 10346
+   OR OrderID = 10401
 6. 
 7. 
 8.
 9.
-10. SELECT ProductName FROM Products WHERE CategoryID = 1
+10. SELECT ProductName FROM Products WHERE CategoryID = 14
