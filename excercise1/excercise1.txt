@@ -1,0 +1,18 @@
+1. SELECT Country FROM Customers WHERE Country = "Germany" OR Country = "Mexico"
+2. SELECT Price FROM Products WHERE Price < 15
+3. SELECT Price FROM Products WHERE Price BETWEEN 10 AND 30
+4. SELECT * FROM [Customers] WHERE NOT Country = "Argentina" 
+   AND NOT Country = "Mexico" 
+   AND NOT Country = "Canada" 
+   AND NOT Country = "Brazil" 
+   AND NOT Country = "USA" 
+   AND NOT Country = "Venezuela"
+   
+5. 
+6. 
+7. SELECT * FROM [Products] 
+   WHERE ProductID = 16 
+   OR ProductID = 35
+8.
+9.
+10. SELECT ProductName FROM Products WHERE CategoryID = 1
