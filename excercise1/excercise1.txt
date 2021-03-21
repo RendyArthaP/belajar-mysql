@@ -23,5 +23,5 @@
 6. SELECT * FROM [Orders] WHERE ShipperID = 3 AND OrderDate BETWEEN '1996-01-01' AND '1996-11-31'
 7. 
 8.
-9.
-10. SELECT ProductName FROM Products WHERE CategoryID = 14
+9. SELECT * FROM [Orders] WHERE ShipperID = 2 AND OrderDate Like '%-08-%';
+10. SELECT ProductName FROM Products WHERE CategoryID = 1
