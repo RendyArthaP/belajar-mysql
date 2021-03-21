@@ -20,8 +20,12 @@
    OR OrderID = 10316
    OR OrderID = 10346
    OR OrderID = 10401
+
 6. SELECT * FROM [Orders] WHERE ShipperID = 3 AND OrderDate BETWEEN '1996-01-01' AND '1996-11-31'
 7. 
-8.
+8. SELECT CustomerID, CustomerName FROM [Customers] WHERE CustomerID = 11
+   SELECT CustomerID, OrderID FROM [Orders] WHERE CustomerID = 11
+   SELECT * FROM [OrderDetails] WHERE OrderID = 10289
+
 9. SELECT * FROM [Orders] WHERE ShipperID = 2 AND OrderDate Like '%-08-%';
 10. SELECT ProductName FROM Products WHERE CategoryID = 1
