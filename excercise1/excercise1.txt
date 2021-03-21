@@ -22,7 +22,12 @@
    OR OrderID = 10401
 
 6. SELECT * FROM [Orders] WHERE ShipperID = 3 AND OrderDate BETWEEN '1996-01-01' AND '1996-11-31'
-7. 
+7. SELECT * FROM [OrderDetails] 
+   WHERE OrderID = 10324 
+   OR OrderID = 10393 
+   OR OrderID = 10398 
+   OR OrderID = 10440
+   
 8. SELECT CustomerID, CustomerName FROM [Customers] WHERE CustomerID = 11
    SELECT CustomerID, OrderID FROM [Orders] WHERE CustomerID = 11
    SELECT * FROM [OrderDetails] WHERE OrderID = 10289
