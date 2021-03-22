@@ -10,16 +10,7 @@
    AND NOT Country = "USA" 
    AND NOT Country = "Venezuela"
 
-5. SELECT CustomerID, CustomerName FROM [Customers] WHERE CustomerID = 65
-   SELECT CustomerID, OrderID FROM [Orders] WHERE CustomerID = 65
-   SELECT * FROM OrderDetails 
-   WHERE OrderID = 10262 
-   OR OrderID = 10272
-   OR OrderID = 10294
-   OR OrderID = 10314
-   OR OrderID = 10316
-   OR OrderID = 10346
-   OR OrderID = 10401
+5. SELECT COUNT(OrderID) FROM Orders WHERE CustomerID = 65
 
 6. SELECT * FROM [Orders] WHERE ShipperID = 3 AND OrderDate BETWEEN '1996-01-01' AND '1996-11-31'
 7. SELECT * FROM [OrderDetails] 
