@@ -13,12 +13,11 @@
 5. SELECT COUNT(OrderID) FROM Orders WHERE CustomerID = 65
 
 6. SELECT * FROM [Orders] WHERE ShipperID = 3 AND OrderDate BETWEEN '1996-01-01' AND '1996-11-31'
-7. SELECT * FROM [OrderDetails] 
-   WHERE OrderID = 10324 
-   OR OrderID = 10393 
-   OR OrderID = 10398 
-   OR OrderID = 10440
-   
+7. SELECT * from Orders 
+   INNER JOIN OrderDetails ON Orders.OrderID = Orderdetails.OrderID 
+   INNER JOIN Products ON Products.ProductID = OrderDetails.ProductID
+   WHERE CustomerID = 71
+
 8. SELECT CustomerID, CustomerName FROM [Customers] WHERE CustomerID = 11
    SELECT CustomerID, OrderID FROM [Orders] WHERE CustomerID = 11
    SELECT * FROM [OrderDetails] WHERE OrderID = 10289
